@@ -1,0 +1,62 @@
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../../assets/mainHouse.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  bottom: 90px;
+  height: 425px;
+}
+
+.content {
+  width: 40%;
+  text-align: left;
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 100;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 4px;
+}
+
+.search input {
+  border: transparent;
+  font-size: 1.1rem;
+  width: 80%;
+  height: 35px;
+  cursor: text;
+}
+
+::placeholder {
+  color: #b2b2b2;
+}
+
+.search button {
+  background-color: #1277e1;
+  border: 1px solid #1277e1;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search .icon {
+  font-size: x-large;
+  display: inline;
+  align-items: center;
+}

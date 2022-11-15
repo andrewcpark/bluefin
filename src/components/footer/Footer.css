@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: auto auto;
+}
+
+.col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  color: #1277e1;
+  margin: 15px 20%;
+}
+
+.col a {
+  font-size: 1rem;
+  color: #333;
+}
+
+.footer img {
+  margin: auto auto;
+}
+
+.footer .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  color: #1277e1;
+  margin: 10px 40%;
+}

@@ -1,0 +1,43 @@
+.ctaSection {
+  width: 100%;
+  align-items: center;
+}
+
+.ctaSection img {
+  width: 550px;
+  height: auto;
+}
+
+.ctaSection input {
+    width: 450px;
+    height: auto;
+    border: 1px solid #b2b2b2;
+  }
+
+  .ctaSection button {
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: large;
+    background-color: #1277e1;
+    border: none;
+    cursor: pointer;
+  }
+
+.Section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 10px;
+  margin: 20px;
+}
+
+.verbiage {
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
