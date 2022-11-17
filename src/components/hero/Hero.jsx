@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 import "./Hero.css";
 
@@ -8,12 +9,15 @@ const Hero = ({ fetchListings, listings, loading }) => {
 
   const [query, setQuery] = useState("");
 
+  const navigate = useNavigate();
+
   const onSubmit = (e) => {
     e.preventDefault();
     if (query === "") {
       alert("Please enter something");
     } else {
       fetchListings(query);
+      navigate("/listings");
       setQuery("");
     }
   };
