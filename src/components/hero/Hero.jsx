@@ -4,9 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import "./Hero.css";
 
-const Hero = ({ fetchListings, listings, loading }) => {
-  const length = listings.length;
-
+const Hero = ({ fetchListings, listings }) => {
   const [query, setQuery] = useState("");
 
   const navigate = useNavigate();
@@ -36,7 +34,7 @@ const Hero = ({ fetchListings, listings, loading }) => {
             value={query}
             onChange={onChange}
             type="text"
-            placeholder="City, Address, School, Agent, ZIP"
+            placeholder=" City, Address, School, Agent, ZIP"
           />
           <button type="submit">
             <AiOutlineSearch className="icon" />

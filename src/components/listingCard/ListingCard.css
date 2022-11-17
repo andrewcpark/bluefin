@@ -1,0 +1,20 @@
+.listingCard {
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  box-shadow: 5px 5px 18px #d3d3d3;
+}
+
+.listingCard:hover {
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    box-shadow: 5px 5px 18px #949494;
+  }
+
+.listingText {
+  padding: 1rem;
+}
+
+.listingCard img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,10 @@
+.listingListSection {
+  max-width: 50vw;
+  height: 85vh;
+  display: grid;
+  grid-template-columns: fit-content(50%) fit-content(50%);
+  overflow: auto;
+  padding: 0px 10px;
+  gap: 10px;
+  
+}

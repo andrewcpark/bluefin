@@ -16,7 +16,7 @@ const Map = ({ center, zoom, listings }) => {
 
   return (
     <>
-      <div style={{ height: "90vh", width: "50%" }}>
+      <div style={{ height: "85vh", width: "50%" }}>
         <GoogleMapReact
           bootstrapURLKeys={{
             key: process.env.REACT_APP_API_BLUEFIN_GOOGLE_MAPS_KEY,
@@ -26,7 +26,8 @@ const Map = ({ center, zoom, listings }) => {
           yesIWantToUseGoogleMapApiInternals
         >
           {listings.map((listing) => (
-            <RiMapPin2Fill className="mapMarker"
+            <RiMapPin2Fill
+              className="mapMarker"
               key={listing.zpid}
               lat={listing.latitude}
               lng={listing.longitude}

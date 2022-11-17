@@ -71,5 +71,11 @@ body {
 }
 
 .searchBar input {
-  border: 1px solid #333
+  border: 1px solid #333;
+}
+
+.listingsPage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
