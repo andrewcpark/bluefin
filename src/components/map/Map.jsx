@@ -1,29 +1,49 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import GoogleMapReact from "google-map-react";
+import { RiMapPin2Fill } from "react-icons/ri";
 
-const Map = () => {
-  const defaultProps = {
-    center: {
-      lat: 34.07705421692482,
-      lng: -118.22911329941581,
-    },
-    zoom: 9,
-  };
+import "./Map.css";
+
+const Map = ({ center, zoom, listings }) => {
+  const [centerObj, setCenter] = useState(center);
+
+  useEffect(() => {
+    if (listings && listings.length > 0) {
+      const obj = { lat: listings[0].latitude, lng: listings[0].longitude };
+      setCenter(obj);
+    }
+  }, [listings]);
 
   return (
     <>
-      <div style={{ height: "100vh", width: "50%" }}>
+      <div style={{ height: "90vh", width: "50%" }}>
         <GoogleMapReact
           bootstrapURLKeys={{
             key: process.env.REACT_APP_API_BLUEFIN_GOOGLE_MAPS_KEY,
           }}
-          defaultCenter={defaultProps.center}
-          defaultZoom={defaultProps.zoom}
+          center={centerObj}
+          defaultZoom={zoom}
           yesIWantToUseGoogleMapApiInternals
-        ></GoogleMapReact>
+        >
+          {listings.map((listing) => (
+            <RiMapPin2Fill className="mapMarker"
+              key={listing.zpid}
+              lat={listing.latitude}
+              lng={listing.longitude}
+            />
+          ))}
+        </GoogleMapReact>
       </div>
     </>
   );
+};
+
+Map.defaultProps = {
+  center: {
+    lat: 34.052235,
+    lng: -118.243683,
+  },
+  zoom: 11,
 };
 
 export default Map;

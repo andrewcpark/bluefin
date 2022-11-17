@@ -1,0 +1,40 @@
+.sBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 4px;
+  }
+  
+  .sBar input {
+    border: 1px solid #b2b2b2;
+    font-size: 1.1rem;
+    width: 80%;
+    height: 40px;
+    cursor: text;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  
+  ::placeholder {
+    color: #b2b2b2;
+  }
+  
+  .sBar button {
+    background-color: #1277e1;
+    border: 1px solid #1277e1;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sBar .icon {
+    font-size: x-large;
+    display: inline;
+    align-items: center;
+  }

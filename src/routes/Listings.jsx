@@ -1,10 +1,15 @@
 import React from "react";
 import Map from "../components/map/Map";
+import SearchBar from "../components/searchBar/SearchBar";
 
-const Listings = () => {
+const Listings = ({ fetchListings, listings, loading }) => {
   return (
     <div>
-      <Map />
+      <SearchBar fetchListings={fetchListings}/>
+      <Map
+        listings={listings}
+
+      />
     </div>
   );
 };

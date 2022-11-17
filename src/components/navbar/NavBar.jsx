@@ -7,15 +7,19 @@ import "./Navbar.css";
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
+
   const handleClick = () => {
     setClick(!click);
-    console.log(click);
+  };
+
+  const returnHome = () => {
+    window.location = "/";
   };
 
   return (
     <div className="navbar">
       <div className="container">
-        <img alt="bluefin-logo" src={BluefinLogo}></img>
+        <img alt="bluefin-logo" onClick={returnHome} src={BluefinLogo} className="bluefin-logo"></img>
         <div className="icon" onClick={handleClick}>
           {click ? <FaRegTimesCircle /> : <HiOutlineMenuAlt4 />}
         </div>

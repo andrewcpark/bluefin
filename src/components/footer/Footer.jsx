@@ -10,6 +10,9 @@ import Logo from "../..//assets/bluefin-logo.png";
 import "./Footer.css";
 
 const Footer = () => {
+  const returnHome = () => {
+    window.location = "/";
+  };
   return (
     <div className="footer">
       <div className="container">
@@ -21,7 +24,13 @@ const Footer = () => {
           <a href="/">Advertise</a>
         </div>
       </div>
-      <img alt="logo" src={Logo} height="100px"/>
+      <img
+        alt="logo"
+        src={Logo}
+        height="100px"
+        onClick={returnHome}
+        className="bluefin-logo"
+      />
       <div className="social">
         <FaFacebookSquare />
         <FaInstagram />

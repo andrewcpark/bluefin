@@ -13,11 +13,11 @@ h1 {
 }
 
 h2 {
- font-size: 32px;
- font-weight: 600;
+  font-size: 32px;
+  font-weight: 600;
 }
 
-p{
+p {
   color: #333;
 }
 
@@ -46,7 +46,7 @@ body {
   background-color: transparent;
   border: 2px solid white;
   border-radius: 2px;
-  font-size: .80rem;
+  font-size: 0.8rem;
   transition: 0.4s;
   cursor: pointer;
   height: 45px;
@@ -58,4 +58,18 @@ body {
   transform: translate(4px);
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0, 0.2);
   border-bottom: none;
+}
+
+.bluefin-logo {
+  cursor: pointer;
+  padding: 0px 24px;
+}
+
+.searchBar {
+  width: 35%;
+  margin: auto;
+}
+
+.searchBar input {
+  border: 1px solid #333
 }
