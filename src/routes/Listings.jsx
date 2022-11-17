@@ -1,13 +1,12 @@
-import React from 'react'
-import Map from '../components/map/Map';
+import React from "react";
+import Map from "../components/map/Map";
 
 const Listings = () => {
   return (
     <div>
-        <Map />
-        <h3>here</h3>
+      <Map />
     </div>
-  )
-}
+  );
+};
 
 export default Listings;
