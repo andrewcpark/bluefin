@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { FaRegTimesCircle } from "react-icons/fa";
 import BluefinLogo from "../../assets/bluefin-logo.png";
@@ -7,6 +7,17 @@ import "./Navbar.css";
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
+  const [alink, setALink] = useState("#fff");
+  const [btnColor, setbtnColor] = useState("#fff");
+  const [btnBorderColor, setBtnBorderColor] = useState("2px solid #fff");
+
+  useEffect(() => {
+    if (window.location.pathname === "/listings") {
+      setALink("#333");
+      setbtnColor("#333");
+      setBtnBorderColor("2px solid #333");
+    }
+  });
 
   const handleClick = () => {
     setClick(!click);
@@ -19,21 +30,48 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <div className="container">
-        <img alt="bluefin-logo" onClick={returnHome} src={BluefinLogo} className="bluefin-logo"></img>
+        <img
+          alt="bluefin-logo"
+          onClick={returnHome}
+          src={BluefinLogo}
+          className="bluefin-logo"
+        ></img>
         <div className="icon" onClick={handleClick}>
           {click ? <FaRegTimesCircle /> : <HiOutlineMenuAlt4 />}
         </div>
         <div className={click ? "menu-container active" : "menu-container"}>
           <ul className="nav-menu">
-            <a href="/"> Buy </a>
-            <a href="/"> Rent </a>
-            <a href="/"> Sell </a>
-            <a href="/"> Mortgage</a>
-            <a href="/"> Real Estate Agents </a>
-            <a href="/"> Feed </a>
+            <a href="/" style={{ color: `${alink}` }}>
+              Buy
+            </a>
+            <a href="/" style={{ color: `${alink}` }}>
+              Rent
+            </a>
+            <a href="/" style={{ color: `${alink}` }}>
+              Sell
+            </a>
+            <a href="/" style={{ color: `${alink}` }}>
+              Mortgage
+            </a>
+            <a href="/" style={{ color: `${alink}` }}>
+              Real Estate Agents
+            </a>
+            <a href="/" style={{ color: `${alink}` }}>
+              Feed
+            </a>
           </ul>
-          <button className="btn"> Log In </button>
-          <button className="btn"> Sign Up</button>
+          <button
+            className="btn"
+            style={{ color: `${btnColor}`, border: `${btnBorderColor}` }}
+          >
+            Log In
+          </button>
+          <button
+            className="btn"
+            style={{ color: `${btnColor}`, border: `${btnBorderColor}` }}
+          >
+            Sign Up
+          </button>
         </div>
       </div>
     </div>

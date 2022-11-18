@@ -24,7 +24,9 @@
 .navbar .nav-menu {
   height: 100%;
   width: 45%;
-  padding: 30px 0px;
+  padding: 11px 0px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navbar a {

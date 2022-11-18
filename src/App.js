@@ -34,7 +34,6 @@ function App() {
         let props = response.data.props;
 
         props = props.sort((a, b) => {
-          //  console.log('A', a);
           if (sortOrder === 1) {
             return a.price > b.price ? 1 : -1;
           } else {
