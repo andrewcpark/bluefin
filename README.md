@@ -1,4 +1,4 @@
-<img alt='/' src="src/assets/bluefin-logo.png" />
+<img alt='/' src="src/assets/bluefin-logo.png" width="150px height="auto"/>
 
 A real estate property finder app using React
 
