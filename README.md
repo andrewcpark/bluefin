@@ -1,12 +1,13 @@
 <p align="center">
 <img alt='/' src="src/assets/bluefin-logo.png" width="150px" height="auto"/>
 </p>
+
 ## Description
 
 A real estate property finder app using React
 
 <p align="center">
-<img alt='/' src="src/assets/Bluefin.gif" width="900px" height="auto"/>
+<img alt='/' src="src/assets/bluefin-page.png" width="900px" height="auto"/>
 </p>
 
 ### Clone This Repository
