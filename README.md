@@ -1,4 +1,4 @@
-# Bluefin
+<img alt='/' src="src/assets/bluefin-logo.png" />
 
 A real estate property finder app using React
 
