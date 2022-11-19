@@ -4,7 +4,9 @@
 
 ## Description
 
-A real estate property finder app using React
+A real estate property finder app using React where users can search active listings by requesting the Zillow API and displaying on an interactive map provided by the Google Maps API. 
+<br>
+[Check demo here.](https://bluefin.vercel.app/)
 
 <p align="center">
 <img alt='/' src="src/assets/bluefin-page.png" width="900px" height="auto"/>
