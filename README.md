@@ -12,6 +12,8 @@ A real estate property finder app using React where users can search active list
 <img alt='/' src="src/assets/bluefin-page.png" width="900px" height="auto"/>
 </p>
 
+## Getting Started
+
 ### Clone This Repository
 
 ```bash
