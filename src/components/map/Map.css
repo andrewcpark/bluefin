@@ -1,4 +1,9 @@
 .mapMarker {
   font-size: 1.5rem;
-  color: #C82021;
+  color: #c82021;
+}
+
+.mapMarker:hover {
+  font-size: 1.5rem;
+  color: #18ad36;
 }

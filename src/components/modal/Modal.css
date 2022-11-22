@@ -1,0 +1,28 @@
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modalContainer {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  right: -50%;
+  right: auto;
+  bottom: auto;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 6px;
+  z-index: 1000;
+}
+
+.modalHeader{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
