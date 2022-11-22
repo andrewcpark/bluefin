@@ -17,17 +17,17 @@
 }
 
 .navbar .menu-container {
-  width: 95%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
 .navbar .nav-menu {
   height: 100%;
-  width: 45%;
-  padding: 11px 0px;
+  width: 75%;
   display: flex;
   justify-content: flex-end;
+  line-height: 45px;
 }
 
 .navbar a {
@@ -38,23 +38,9 @@
   display: none;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1000px) {
   .navbar {
     background-color: #fff;
-  }
-
-  .navbar .menu-container {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    top: 90px;
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-    transition: 0.4s ease-in-out;
-    right: 100%;
   }
 
   .icon {
@@ -63,27 +49,31 @@
     font-size: 2rem;
     color: #333;
   }
-  .nav-menu {
+
+  .menu-container {
     position: absolute;
     display: flex;
-    top: 160px;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    top: 90px;
+    height: 700px;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.4s ease-in-out;
+    right: 100%;
+  }
+
+  .navbar .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     height: 100%;
     width: 100%;
   }
 
-  .btn {
-    border: 1px solid black;
-    color: #333;
-  }
-
   .navbar .active {
     right: 0;
-  }
-
-  .navbar a {
-    font-size: 1rem;
-    color: #333;
   }
 }

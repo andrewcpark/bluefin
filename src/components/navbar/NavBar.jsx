@@ -17,7 +17,15 @@ const NavBar = () => {
       setbtnColor("#333");
       setBtnBorderColor("2px solid #333");
     }
-  }, []);
+  });
+
+  useEffect(() => {
+    if (window.innerWidth <= 1000) {
+      setALink("#333");
+      setbtnColor("#333");
+      setBtnBorderColor("2px solid #333");
+    }
+  });
 
   const handleClick = () => {
     setClick(!click);
@@ -41,22 +49,22 @@ const NavBar = () => {
         </div>
         <div className={click ? "menu-container active" : "menu-container"}>
           <ul className="nav-menu">
-            <a href="/" style={{ color: `${alink}` }}>
+            <a className="aLinks" href="/" style={{ color: `${alink}` }}>
               Buy
             </a>
-            <a href="/" style={{ color: `${alink}` }}>
+            <a className="aLinks" href="/" style={{ color: `${alink}` }}>
               Rent
             </a>
-            <a href="/" style={{ color: `${alink}` }}>
+            <a className="aLinks" href="/" style={{ color: `${alink}` }}>
               Sell
             </a>
-            <a href="/" style={{ color: `${alink}` }}>
+            <a className="aLinks" href="/" style={{ color: `${alink}` }}>
               Mortgage
             </a>
-            <a href="/" style={{ color: `${alink}` }}>
+            <a className="aLinks" href="/" style={{ color: `${alink}` }}>
               Real Estate Agents
             </a>
-            <a href="/" style={{ color: `${alink}` }}>
+            <a className="aLinks" href="/" style={{ color: `${alink}` }}>
               Feed
             </a>
           </ul>
