@@ -39,7 +39,7 @@ const Map = ({ center, zoom, listings }) => {
               key={listing.zpid}
               lat={listing.latitude}
               lng={listing.longitude}
-              $onClick={() => {
+              onClick={() => {
                 setSelected({
                   id: listing.zpid,
                   price: listing.price,
