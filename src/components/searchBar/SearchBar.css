@@ -28,9 +28,12 @@
   width: 10%;
   height: 150%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
   align-items: center;
   box-sizing: border-box;
   position: relative;
+  vertical-align: center;
 }
 
 .sBar .icon {
@@ -54,7 +57,7 @@
   .sBar .icon {
     font-size: large;
     display: inline;
-    align-items: center;
-    vertical-align: center;
+    color: #fff;
+    margin: 0;
   }
 }

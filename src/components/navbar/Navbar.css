@@ -12,7 +12,8 @@
 .navbar .container {
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0px 15px;
 }
 
 .navbar .menu-container {
@@ -42,13 +43,6 @@
     background-color: #fff;
   }
 
-  .icon {
-    display: block;
-    margin-top: 1.4rem;
-    font-size: 2rem;
-    color: #333;
-  }
-
   .navbar .menu-container {
     position: absolute;
     display: flex;
@@ -63,6 +57,12 @@
     right: 100%;
   }
 
+  .icon {
+    display: block;
+    margin-top: 1.4rem;
+    font-size: 2rem;
+    color: #333;
+  }
   .nav-menu {
     position: absolute;
     display: flex;
@@ -86,5 +86,4 @@
     font-size: 1rem;
     color: #333;
   }
-
 }

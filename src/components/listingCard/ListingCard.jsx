@@ -30,7 +30,7 @@ const ListingCard = ({ listings }) => {
       <Modal open={isOpen} onClose={() => setIsOpen(false)}>
         <div className="popupContainer">
           <div>
-            <img src={listings.imgSrc} alt="/" width="500px" height="auto" />
+            <img src={listings.imgSrc} alt="/" height="auto" />
           </div>
           <div className="popupRight">
             <h2>${listings.price.toLocaleString()} </h2>

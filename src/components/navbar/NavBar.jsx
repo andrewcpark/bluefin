@@ -17,7 +17,7 @@ const NavBar = () => {
       setbtnColor("#333");
       setBtnBorderColor("2px solid #333");
     }
-  });
+  }, []);
 
   const handleClick = () => {
     setClick(!click);

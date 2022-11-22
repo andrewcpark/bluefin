@@ -35,7 +35,7 @@ const CtaSection = () => {
               type="text"
               placeholder="City, Address, School, Agent, ZIP"
             />
-            <button type="submit">
+            <button type="submit" className="searchBtn">
               <AiOutlineSearch className="icon" />
             </button>
           </form>

@@ -7,11 +7,14 @@
   margin: auto auto;
 }
 
+.container {
+  width: 100%;
+}
+
 .col {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  font-size: 2rem;
   color: #1277e1;
   margin: 25px 20%;
 }
@@ -32,4 +35,14 @@
   font-size: 2rem;
   color: #1277e1;
   margin: 10px 40%;
+}
+
+@media only screen and (max-width: 500px) {
+  .col {
+    margin: 25px 0;
+  }
+
+  .footer .social {
+    margin: 20px 5%;
+  }
 }

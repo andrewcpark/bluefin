@@ -26,3 +26,11 @@
     justify-content: space-between;
     margin-right: 30px;
 }
+
+@media only screen and (max-width: 760px) {
+  .modalContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

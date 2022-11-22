@@ -60,3 +60,25 @@
   display: inline;
   align-items: center;
 }
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .content {
+    width: 70%;
+    text-align: left;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+  }
+
+  .search .icon {
+    font-size: x-large;
+    display: inline;
+    color: #fff;
+    margin: 0;
+  }
+
+}
