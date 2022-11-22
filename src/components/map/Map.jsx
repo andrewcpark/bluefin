@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react";
 import GoogleMapReact from "google-map-react";
 import { RiMapPin2Fill } from "react-icons/ri";
+import InfoMarker from "../infoMarker/InfoMarker";
 
 import "./Map.css";
 
 const Map = ({ center, zoom, listings }) => {
   const [centerObj, setCenter] = useState(center);
+  const [selected, setSelected] = useState(null);
+
+  const handleClick = () => {
+    setSelected(null);
+  };
 
   useEffect(() => {
     if (listings && listings.length > 0) {
@@ -16,6 +22,8 @@ const Map = ({ center, zoom, listings }) => {
 
   return (
     <>
+      {selected && <InfoMarker info={selected} handleClick={handleClick} />}
+
       <div style={{ height: "85vh", width: "50%" }}>
         <GoogleMapReact
           bootstrapURLKeys={{
@@ -31,6 +39,17 @@ const Map = ({ center, zoom, listings }) => {
               key={listing.zpid}
               lat={listing.latitude}
               lng={listing.longitude}
+              onClick={() => {
+                setSelected({
+                  id: listing.zpid,
+                  price: listing.price,
+                  img: listing.imgSrc,
+                  bed: listing.bedrooms,
+                  bath: listing.bathrooms,
+                  sqft: listing.livingArea,
+                  address: listing.address,
+                });
+              }}
             />
           ))}
         </GoogleMapReact>

@@ -1,0 +1,22 @@
+.infoMarkerContainer {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 20;
+  border-bottom: 1px solid blue;
+  background-color: #fff;
+  padding: .5em;
+}
+
+.textInfoMarkerConatiner {
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infoMarkerPrice {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
