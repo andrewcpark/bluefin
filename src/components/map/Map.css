@@ -8,7 +8,7 @@
   color: #18ad36;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
   .googleMapReact {
     display: none;
   }

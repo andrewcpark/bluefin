@@ -5,7 +5,7 @@ import ListingList from "../components/listingsList/ListingList";
 
 const Listings = ({ fetchListings, listings, loading }) => {
   return (
-    <div>
+    <div className="listings">
       <SearchBar fetchListings={fetchListings} />
       <div className="listingsPage">
         <Map listings={listings} />

@@ -42,8 +42,8 @@ const Footer = () => {
         type="image/svg+xml"
         alt="Footer art"
         focusable="false"
-        height="160"
-        width="1200"
+        height="auto"
+        width="90%"
       ></img>
     </div>
   );
