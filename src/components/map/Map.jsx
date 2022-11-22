@@ -24,7 +24,7 @@ const Map = ({ center, zoom, listings }) => {
     <>
       {selected && <InfoMarker info={selected} handleClick={handleClick} />}
 
-      <div style={{ height: "85vh", width: "50%" }}>
+      <div className="googleMapReact" style={{ height: "85vh", width: "50%" }}>
         <GoogleMapReact
           bootstrapURLKeys={{
             key: process.env.REACT_APP_API_BLUEFIN_GOOGLE_MAPS_KEY,

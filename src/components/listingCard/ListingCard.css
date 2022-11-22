@@ -22,6 +22,7 @@
 .popupContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 15px;
 }
 
 .popupRight {
@@ -38,4 +39,11 @@
 
 .popupRight h2 {
   margin: 10px;
+}
+
+@media only screen and (max-width: 640px) {
+  .popupContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }

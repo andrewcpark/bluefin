@@ -7,3 +7,9 @@
   font-size: 1.5rem;
   color: #18ad36;
 }
+
+@media only screen and (max-width: 768px) {
+  .googleMapReact {
+    display: none;
+  }
+}
