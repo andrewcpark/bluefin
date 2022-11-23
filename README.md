@@ -2,8 +2,7 @@
 <img alt='/' src="src/assets/bluefin-logo.png" width="150px" height="auto"/>
 </p>
 
-## Description
-
+<br>
 A real estate property finder app using React where users can search active listings by requesting the Zillow API and displaying on an interactive map provided by the Google Maps API.
 <br>
 [Check demo here.](https://bluefin.vercel.app/)
@@ -15,6 +14,16 @@ A real estate property finder app using React where users can search active list
 <p align="center">
 <img alt='/' src="src/assets/bluefin-mapPage.png" width="900px" height="auto"/>
 </p>
+
+<br>
+
+## Description
+
+### React
+
+### APIs
+
+### CSS
 
 ## Getting Started
 
