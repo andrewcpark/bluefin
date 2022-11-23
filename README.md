@@ -7,6 +7,9 @@ A real estate property finder app using React where users can search active list
 <br>
 [Check demo here.](https://bluefin.vercel.app/)
 
+<br>
+<br>
+
 <p align="center">
 <img alt='/' src="src/assets/bluefin-page.png" width="900px" height="auto"/>
 </p>
@@ -21,9 +24,25 @@ A real estate property finder app using React where users can search active list
 
 ### React
 
+<br>
+I built the frontend of this application using React in order to design and implement resuable components. I also used libraries such as React Hooks to declare state in components and React Router to configure routes and navigation. Using React DOM, I used this opporuntity to create a portal and a modal component when a user clicks on a specific listing card. 
+<br>
+<p align="center">
+<img alt='/' src="src/assets/bluefin-modal.png" width="600px" height="auto"/>
+</p>
+<br>
+
 ### APIs
 
+<br>
+<p> This application utilizes two third-party APIs, Google Maps and the Zillow API. When a user submits a query, the app first calls the Zillow API in order to get all the available listings. Once the listings are received, the data is then passed onto the Google Maps component rendering each listing on the map based on their coordinates. The listings data are also used to display a list of the listing cards. <p/>
+<br>
+
 ### CSS
+
+<br>
+For this application, I utilized pure CSS to style the components instead of using a framework I am fond of such as Tailwind CSS. Through this exercise, I brushed up on CSS fundamentals and responsive designs implementing media queries. 
+<br>
 
 ## Getting Started
 
