@@ -48,6 +48,8 @@ For this application, I utilized pure CSS to style the components instead of usi
 
 ### Clone This Repository
 
+Note: This application requires registered API Keys from RapidAPI and Google Maps Platform. 
+
 ```bash
 git clone https://github.com/andrewcpark/bluefin.git
 ```
