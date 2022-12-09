@@ -12,7 +12,7 @@ const Hero = ({ fetchListings, listings }) => {
   const onSubmit = (e) => {
     e.preventDefault();
     if (query === "") {
-      alert("Please enter something");
+      alert("Please enter a city, address, or ZIP");
     } else {
       fetchListings(query);
       navigate("/listings");

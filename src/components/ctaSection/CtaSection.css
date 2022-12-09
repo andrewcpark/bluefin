@@ -21,7 +21,7 @@
   font-size: large;
   background-color: #1277e1;
   border: none;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 .Section {

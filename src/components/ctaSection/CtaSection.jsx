@@ -19,7 +19,7 @@ const CtaSection = () => {
           </p>
           <form className="search">
             <input type="text" placeholder=" Enter your street address" />
-            <button type="submit">Next</button>
+            <button disabled>Next</button>
           </form>
         </div>
       </div>
@@ -35,7 +35,7 @@ const CtaSection = () => {
               type="text"
               placeholder="City, Address, School, Agent, ZIP"
             />
-            <button type="submit" className="searchBtn">
+            <button className="searchBtn" disabled>
               <AiOutlineSearch className="icon" />
             </button>
           </form>
@@ -50,7 +50,7 @@ const CtaSection = () => {
             We’re bringing you the latest on how COVID-19 is impacting the real
             estate market.
           </p>
-          <button>Housing News</button>
+          <button disabled>Housing News</button>
         </div>
       </div>
     </div>
